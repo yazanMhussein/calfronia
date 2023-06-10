@@ -1,0 +1,808 @@
+*{margin: 0px;}
+body{
+    background-color: #f5f2ed;
+    overflow-x: hidden;
+}
+main{}
+
+
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    position: absolute;
+    background: hsl(0 0% 100% /0.1);
+    top: 0px;
+    width: 100%;
+    backdrop-filter: brightness(0.5);
+} 
+
+
+.primary-navigation a{
+    text-decoration: none;
+    
+}
+.mobile-nav-toggle{
+   display: none;
+}
+    .primary-navigation{
+       display: none;
+       flex-direction: column;
+       position: absolute;
+       list-style: none;
+       z-index: 1000;
+       gap: 1rem;
+       inset: 0 0 0 65%;
+       padding: min(30vh,7rem) 3em;
+       background: hsl(0 0% 100% /0.1);
+       backdrop-filter: blur(1rem);
+       transform: translateX(100%);
+       transition: transform 350ms ease-in;
+       height: 165%;
+    
+    }
+    .primary-navigation[data-visible="true"]{
+        transform: translateX(0%);
+        display: flex;
+    }
+    .mobile-nav-toggle{
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        width: 3rem;
+        aspect-ratio: 1;
+        top: 2rem;
+        right: 2rem;
+        background-color: transparent;
+        font-size: 2.5rem;
+        border: none;
+        color: darkgoldenrod;
+    }
+    .mobile-nav-toggle[aria-expanded="true"]{}
+nav{
+    
+    display: flex;
+    align-self: center;
+}
+a{
+    color: #8c7343;
+}
+a:visited{
+    color: #bc9633;
+}
+a:hover{
+    color: white;
+}
+.header{
+    position: relative;
+}
+.headImg{
+    position: relative;
+    height: 30rem;
+    width: 100%;
+}
+.icon{
+    height: 90px;
+}
+.mainImg{width: 100%;}
+.mainHeadlineHeader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.subTextHeader{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+}
+.between{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    position: absolute;
+    bottom: -26px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+    width: 90%;
+    margin-left: 16px;
+    text-align: center;
+}
+.callUsGroup{
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-right-color: deepskyblue;
+}
+.callUsMainHeader{
+    color: goldenrod;
+    margin-bottom: 20px;
+}
+.callUsTel{}
+.addressGroup{
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-right-color: deepskyblue;
+}
+.addressMainHeader{
+    color: goldenrod;
+}
+.addressMapLink{}
+.checkTime{color: goldenrod;}
+.checkTimeMainHeader{}
+.checkTimeGroup{}
+.checkInTime{}
+.inTime{}
+.checkOutTime{}
+.outTime{}
+.fa-solid fa-arrow-right{}
+.amenities{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.amenitiesMainText{
+    text-align: center;
+    color: goldenrod;
+    margin-top: 20%;
+}
+.amenitiesText{
+    line-height: 1.5rem;
+    text-align: center;
+    color: #8c7343;
+}
+.amenitiesSubText{
+    padding-top: 1rem;
+    text-align: center;
+    color: goldenrod;
+}
+.amenitiesParts{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);    
+    padding-bottom: 1rem;
+    color: #8c7343;
+}
+.amenitiesButton{
+    width: 50%;
+    background-color: #8c7343;
+    border-style: none;
+    padding: 1rem;
+    margin-left: 25%;
+    border-radius: 5%;
+    color: #f5f2ed;
+    font-size: 1.3rem;
+}
+.rooms{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.roomMainTitle{
+    text-align: center;
+    color: goldenrod;
+    font-size: 2rem;
+}
+.cards{}
+.roomCard{
+    width: 100%;
+    text-align: center;
+}
+.bedMainText{
+    color: goldenrod;
+    margin-bottom: 5%;
+}
+.bed{
+    height: 15rem;
+}
+.bed3{
+    height: 13rem;
+}
+.allRooms{   
+    width: 60%;
+    background-color: #8c7343;
+    border-style: none;
+    padding: 1rem;
+    margin-left: 19%;
+    border-radius: 5%;
+    color: #f5f2ed;
+    font-size: 1.3rem;}
+.review{
+   text-align: center;
+}
+.reviewHeader{
+    color: darkgoldenrod;
+    line-height: 3rem;
+}
+.reviewSubText{
+    color: #8c7343;
+}
+.reviewGroup{}
+
+.ahmdsharariCommentGroup{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+.ahmdsharariHeader{
+    display: inline-flex;
+    justify-content: center;
+}
+.icon1{
+    height: 40px;
+}
+.ahmdsharariHeadLine{
+    align-self: center;
+    padding-left: 10px;
+    font-size: 1.2rem;
+}
+.starsGroup{
+    margin-left: 50px;
+}
+.stars{
+    height: 15px;
+}
+.ahmdsharariComment{}
+.callus{
+    
+}
+.bgHotel{
+    height: 25rem;
+    width: 99%;
+    position: absolute;
+    filter: brightness(.9);
+}
+.callusGroupText{
+    position: relative;
+    text-align: center;
+    top: 185px;
+    backdrop-filter: brightness(0.5);
+}
+.MainCallHeader{
+    color: darkgoldenrod;
+}
+.MainCallMainText{
+    color: darkgoldenrod;
+}
+.MainCallSubHeader{
+    color: darkgoldenrod;
+}
+.telephoneGroup{
+    color: darkgoldenrod;
+}
+.landText{
+    color: darkgoldenrod;
+}
+.mobileText{
+    color: darkgoldenrod;
+}
+.socilMedia{
+    display: grid;
+    grid-template-columns: repeat(4,0fr);
+    gap: 1rem;
+    justify-content: center;
+    color: darkgoldenrod;
+    backdrop-filter: brightness(0.5);
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    .navbar {
+        grid-template-columns: repeat(8,1fr);
+        backdrop-filter: brightness(0.5);
+    }
+    .primary-navigation {
+        display: flex;
+    flex-direction: row;
+    position: relative;
+    list-style: none;
+    z-index: 1000;
+    gap: 1rem;
+    inset: 0 0 0 0%;
+    padding: 0;
+    background: none;
+    backdrop-filter: none;
+    transform: translateX(25%);
+    transition: none;
+}
+.fa-bars{
+    display: none;
+}
+.mobile-nav-toggle {display: none;}
+    .amenitiesMainText {
+        margin-top: 10%;
+    }
+    .amenitiesText {
+        text-align: start;
+    }
+    .amenitiesSubText {
+        text-align: start;
+        margin-top: 7%;
+    }
+    .amenitiesButton {
+        width: 80%;
+        margin-left: 0%;
+        border-radius: 2%;
+        font-size: 1.3rem;
+    }
+    .amenities {
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1439px){
+    .navbar {
+        grid-template-columns: repeat(8,1fr);
+        backdrop-filter: brightness(0.5);
+    }
+    .primary-navigation {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        inset: 0 0 0 0%;
+        padding: 0;
+        background: none;
+        backdrop-filter: none;
+        transform: translateX(25%);
+        transition: none;
+        font-size: 1.5rem;
+}
+    .fa-bars{
+    display: none;
+    }
+    .mobile-nav-toggle {display: none;}
+    .between {
+    position: inherit;
+    width: 90%;
+    margin-left: 60px;
+    font-size: 1rem;
+    }
+    .addressMainHeader {
+    margin-bottom: 10px;
+    }
+    .amenitiesMainText {
+        margin: 10% 1% 3% 8%;
+        font-size: 1.5rem;
+        text-align: start;
+    }
+    .amenitiesText {
+        text-align: start;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin: 3% 0% 0% 8%;
+    }
+    .amenitiesSubText {
+        text-align: start;
+        margin: 7% 0% 3% 26%;;
+        font-size: 1.5rem;
+    }
+    .amenitiesParts {
+        font-size: 1rem;
+        line-height: 1rem;
+        margin: 3% 0% 0% 26%;
+    }
+    .amenitiesButton {
+        width: 40%;
+        margin-left: 35%;
+        border-radius: 2%;
+        font-size: 1rem;
+    }
+    .amenities {
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+    .roomMainTitle {
+        font-size: 3rem;
+    }
+    .bedMainText {
+        font-size: 2rem;
+    }
+    .bed , .bed3{
+        height: 15rem;
+        width: 80%;
+    }
+    .allRooms {
+        width: 25%;
+        background-color: #8c7343;
+        border-style: none;
+        padding: 1rem;
+        margin-left: 37%;
+        border-radius: 2%;
+        color: #f5f2ed;
+        font-size: 1rem;
+        margin-bottom: 5%;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .reviewGroup {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .reviewHeader {
+        color: darkgoldenrod;
+        line-height: 3rem;
+        font-size: 3rem;
+        margin-bottom: 4%;
+    }
+    .reviewSubText {
+        color: #8c7343;
+        font-size: 2rem;
+        margin-bottom: 5%;
+    }
+    .icon1 {
+        height: 40px;
+    }
+    .ahmdsharariHeadLine {
+        align-self: center;
+        padding-left: 10px;
+        font-size: 1rem;
+    }
+    .ahmdsharariComment {
+        font-size: 1rem;
+    }
+    .bgHotel {
+        height: 45rem;
+        width: 100%;
+        position: absolute;
+        filter: brightness(.9);
+    }
+    .callusGroupText{
+    position: relative;
+    text-align: center;
+    top: 24rem;
+    backdrop-filter: brightness(0.5);
+    height: 100%;
+}
+    .MainCallHeader {
+    color: darkgoldenrod;
+    font-size: 1.5rem;
+}
+    .MainCallMainText {
+    color: darkgoldenrod;
+    font-size: 1.5rem;
+}
+    .MainCallSubHeader{
+    color: darkgoldenrod;
+    font-size: 1.5rem;
+}
+    .telephoneGroup {
+    color: darkgoldenrod;
+    font-size: 1.5rem;
+}
+    .socilMedia {
+    display: grid;
+    grid-template-columns: repeat(4,0fr);
+    gap: 3rem;
+    justify-content: center;
+    color: darkgoldenrod;
+    backdrop-filter: brightness(0.5);
+    font-size: 1.5rem;
+    margin-top: 2%;
+}
+    }
+@media screen and (min-width:1440px) and (max-width:2559px){
+    .navbar {
+        grid-template-columns: repeat(8,1fr);
+        backdrop-filter: brightness(0.5);
+    }
+    .primary-navigation {
+        display: flex;
+    flex-direction: row;
+    position: relative;
+    list-style: none;
+    z-index: 1000;
+    gap: 1rem;
+    inset: 0 0 0 0%;
+    padding: 0;
+    background: none;
+    backdrop-filter: none;
+    transform: translateX(25%);
+    transition: none;
+    font-size: 2rem;
+}
+    .fa-bars{
+    display: none;
+    }
+    .mobile-nav-toggle {display: none;}
+    .between {
+        position: inherit;
+        width: 90%;
+        margin-left: 60px;
+        font-size: 1.5rem;
+    }
+    .addressMainHeader {
+    margin-bottom: 10px;
+    }
+    .amenitiesMainText {
+        margin: 10% 1% 3% 8%;
+        font-size: 2rem;
+        text-align: start;
+    }
+    .amenitiesText {
+        text-align: start;
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+        margin: 3% 0% 0% 8%;
+    }
+    .amenitiesSubText {
+        text-align: start;
+        margin: 7% 0% 3% 26%;;
+        font-size: 2rem;
+    }
+    .amenitiesParts {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin: 3% 0% 0% 26%;
+    }
+    .amenitiesButton {
+        width: 40%;
+        margin-left: 35%;
+        border-radius: 2%;
+        font-size: 2rem;
+    }
+    .amenities {
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+    .roomMainTitle {
+        font-size: 4rem;
+    }
+    .bedMainText {
+        font-size: 3rem;
+    }
+    .bed , .bed3{
+        height: 15rem;
+        width: 80%;
+    }
+    .allRooms {
+        width: 25%;
+        background-color: #8c7343;
+        border-style: none;
+        padding: 1rem;
+        margin-left: 37%;
+        border-radius: 2%;
+        color: #f5f2ed;
+        font-size: 2rem;
+        margin-bottom: 5%;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .reviewGroup {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .reviewHeader {
+        color: darkgoldenrod;
+        line-height: 3rem;
+        font-size: 4rem;
+        margin-bottom: 4%;
+    }
+    .reviewSubText {
+        color: #8c7343;
+        font-size: 3rem;
+        margin-bottom: 5%;
+    }
+    .icon1 {
+        height: 100%;
+    }
+    .ahmdsharariHeadLine {
+        align-self: center;
+        padding-left: 10px;
+        font-size: 2rem;
+    }
+    .ahmdsharariComment {
+        font-size: 1.5rem;
+    }
+    .bgHotel {
+        height: 45rem;
+        width: 100%;
+        position: absolute;
+        filter: brightness(.9);
+    }
+    .callusGroupText{
+    position: relative;
+    text-align: center;
+    top: 24rem;
+    backdrop-filter: brightness(0.5);
+    height: 100%;
+}
+    .MainCallHeader {
+    color: darkgoldenrod;
+    font-size: 2rem;
+}
+    .MainCallMainText {
+    color: darkgoldenrod;
+    font-size: 2rem;
+}
+    .MainCallSubHeader{
+    color: darkgoldenrod;
+    font-size: 2rem;
+}
+    .telephoneGroup {
+    color: darkgoldenrod;
+    font-size: 2rem;
+}
+    .socilMedia {
+    display: grid;
+    grid-template-columns: repeat(4,0fr);
+    gap: 3rem;
+    justify-content: center;
+    color: darkgoldenrod;
+    backdrop-filter: brightness(0.5);
+    font-size: 2rem;
+    margin-top: 2%;
+}
+    }
+@media screen and (min-width:2560px){
+    .headImg {
+        position: relative;
+        height: 80rem;
+        width: 100%;
+    }
+    .navbar {
+        grid-template-columns: repeat(8,1fr);
+        backdrop-filter: brightness(0.5);
+    }
+    .icon {
+        height: 10rem;
+    }
+    .primary-navigation {
+        display: flex;
+    flex-direction: row;
+    position: relative;
+    list-style: none;
+    z-index: 1000;
+    gap: 3rem;
+    inset: 0 0 0 0%;
+    padding: 0;
+    background: none;
+    backdrop-filter: none;
+    transform: translateX(20%);
+    transition: none;
+    font-size: 4rem;
+    }
+    .fa-bars{
+    display: none;
+    }
+    .mobile-nav-toggle {display: none;}
+    .between {
+    width: 90%;
+    margin-left: 60px;
+    font-size: 3rem;
+    position: inherit;
+    }
+    .addressMainHeader {
+    margin-bottom: 10px;
+    }
+    .amenitiesMainText {
+        margin: 10% 0% 3% 8%;
+        font-size: 5rem;
+        text-align: start;
+    }
+    .amenitiesText {
+        text-align: start;
+        font-size: 3rem;
+        line-height: 4rem;
+        margin: 3% 0% 0% 8%;
+    }
+    .amenitiesSubText {
+        text-align: start;
+        margin: 7% 0% 3% 26%;;
+        font-size: 5rem;
+    }
+    .amenitiesParts {
+        font-size: 3rem;
+        line-height: 4rem;
+        margin: 3% 0% 0% 26%;
+    }
+    .amenitiesButton {
+        width: 40%;
+        margin-left: 35%;
+        border-radius: 2%;
+        font-size: 4rem;
+    }
+    .amenities {
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+    .roomMainTitle {
+        font-size: 5rem;
+    }
+    .bedMainText {
+        font-size: 5rem;
+    }
+    .bed , .bed3{
+        height: 100%;
+        width: 80%;
+    }
+    .allRooms {
+        width: 25%;
+        background-color: #8c7343;
+        border-style: none;
+        padding: 1rem;
+        margin-left: 37%;
+        border-radius: 2%;
+        color: #f5f2ed;
+        font-size: 4rem;
+        margin-bottom: 5%;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .reviewGroup {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .reviewHeader {
+        color: darkgoldenrod;
+        line-height: 3rem;
+        font-size: 8rem;
+        margin-bottom: 4%;
+    }
+    .reviewSubText {
+        color: #8c7343;
+        font-size: 5rem;
+        margin-bottom: 5%;
+    }
+    .icon1 {
+        height: 100%;
+    }
+    .ahmdsharariHeadLine {
+        align-self: center;
+        padding-left: 10px;
+        font-size: 5rem;
+    }
+    .ahmdsharariComment {
+        font-size: 4rem;
+        margin-left: 80px;
+    }
+    .bgHotel {
+        height: 75rem;
+        width: 100%;
+        position: absolute;
+        filter: brightness(.9);
+    }
+    .callusGroupText{
+    position: relative;
+    text-align: center;
+    top: 45rem;
+    backdrop-filter: brightness(0.5);
+    height: 100%;
+}
+    .MainCallHeader {
+    color: darkgoldenrod;
+    font-size: 3rem;
+}
+    .MainCallMainText {
+    color: darkgoldenrod;
+    font-size: 3rem;
+}
+    .MainCallSubHeader{
+    color: darkgoldenrod;
+    font-size: 3rem;
+}
+    .telephoneGroup {
+    color: darkgoldenrod;
+    font-size: 3rem;
+}
+    .socilMedia {
+    display: grid;
+    grid-template-columns: repeat(4,0fr);
+    gap: 3rem;
+    justify-content: center;
+    color: darkgoldenrod;
+    backdrop-filter: brightness(0.5);
+    font-size: 3rem;
+    margin-top: 1%;
+}
+}
+
+
+/* small mobile 320px - 375px 
+   m mobile     375px - 425px 
+   l mobile     425px - 768px
+   tablet       768px -  1024px
+   laptop       1024px - 1440px
+   laptop L     1440px - 2560px  
+   tv 4k        2560px - max px*/ 

@@ -1,0 +1,116 @@
+.mainText {
+    text-align: center;
+    color: goldenrod;
+    padding: 1.5rem 0;
+}
+
+.outerRoomCard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 25px 23px 25px 12px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 2px;
+    border-color: gray;
+    border-radius: 3%;
+}
+
+.imgCard {
+    height: 15rem;
+    border-start-start-radius: 2%;
+    border-start-end-radius: 2%;
+    width: -webkit-fill-available;
+}
+
+.cardHeadLine {
+    color: goldenrod;
+    text-align: center;
+    padding: 2rem 0px;
+}
+
+.cardButton {
+    width: 50%;
+    align-self: center;
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    margin-bottom: 10%;
+    color: goldenrod;
+    border-color: goldenrod;
+    border-radius: 10px;
+}
+
+/* #8c7343 */
+@media screen and (min-width:768px) and (max-width:1438px) {
+    .outerRoomCard {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        width: 75%;
+    }
+
+    .cardButton {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (min-width:425px) and (max-width:767px) {
+    .mainText {
+        font-size: 3rem;
+    }
+
+    .outerRoomCard {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card {
+        width: 75%;
+        justify-self: center;
+    }
+
+    .cardButton {
+        font-size: 1rem;
+    }
+
+}
+@media screen and (min-width:320px) and (max-width:424px) {
+    .outerRoomCard {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card {
+        width: 75%;
+    }
+
+    .cardButton {
+        font-size: 1rem;
+    }
+
+}
+@media screen and (width:2560px) {
+   
+    .mainText {
+        font-size: 5rem;
+    }
+
+    .cardButton {
+        font-size: 3rem;
+    }
+    .cardHeadLine {
+        font-size: 4rem;
+    }
+    .imgCard {
+        height: 30rem;
+    }
+    
+
+}
